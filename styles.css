@@ -1,0 +1,31 @@
+.header-title {
+  text-align: center;
+  color: #ff836d;
+  font-size: 45px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  outline: none;
+}
+
+.tasks-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks-section .item-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  width: 400px;
+  margin: 10px;
+}
+
