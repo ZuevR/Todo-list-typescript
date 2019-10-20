@@ -9,30 +9,46 @@
   <title>Todo List</title>
 </head>
 <body>
+<div class="list">
+  <header class="header">
+    <h1 class="header-title">Todo List</h1>
+  </header>
 
-<header class="header">
-  <h1 class="header-title">Todo List</h1>
-</header>
+  <section class="input-section">
+    <form onSubmit="return false;">
+      <label>
+        <input id="input" class="input" type="text" placeholder="Enter new task">
+      </label>
 
-<section class="input-section">
-  <form onSubmit="return false;">
-    <label>
-      <input id="input" class="input" type="text" placeholder="Enter new task">
-    </label>
+      <input id="add-button" type="button" value="Create">
+    </form>
+  </section>
 
-    <input id="add-button" type="button" value="Create">
-  </form>
-</section>
+  <section class="cbx-section">
+    <div class="cbx-wrapper">
+      <input id="check-all" type="checkbox">
+      <label for="check-all">Complete All</label>
+    </div>
+  </section>
 
-<section class="tasks-section">
-  <ul class="tasks-wrapper" id="todo-list">
-    <li class="item-task">
-      <input type="checkbox">
-      <span>text</span>
-      <button>×</button>
-    </li>
-  </ul>
-</section>
+  <section class="tasks-section">
+    <ul class="tasks-wrapper" id="todo-list">
+
+    </ul>
+  </section>
+
+  <section class="info">
+    <div class="filters">
+      <button id="all">All</button>
+      <button id="completed">Completed</button>
+      <button id="active">Active</button>
+    </div>
+    <div class="counters">
+      <span id="left">0</span> Items left
+      <span id="done" style="margin-left: 10px;">0</span> Items done
+    </div>
+  </section>
+</div>
 
 
 <script src="dist/bundle.js"></script>
